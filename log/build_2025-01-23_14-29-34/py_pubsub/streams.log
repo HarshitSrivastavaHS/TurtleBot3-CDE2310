@@ -1,0 +1,36 @@
+[3.079s] Invoking command in '/home/ubuntu/turtlebot3_ws/src/py_pubsub': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/ubuntu/turtlebot3_ws/build/py_pubsub/build install --record /home/ubuntu/turtlebot3_ws/build/py_pubsub/install.log --single-version-externally-managed install_data
+[4.043s] running egg_info
+[4.045s] creating ../../build/py_pubsub/py_pubsub.egg-info
+[4.045s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[4.046s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[4.047s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[4.047s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[4.048s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[4.049s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.056s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.059s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[4.059s] running build
+[4.059s] running build_py
+[4.060s] creating /home/ubuntu/turtlebot3_ws/build/py_pubsub/build
+[4.061s] creating /home/ubuntu/turtlebot3_ws/build/py_pubsub/build/lib
+[4.061s] creating /home/ubuntu/turtlebot3_ws/build/py_pubsub/build/lib/py_pubsub
+[4.061s] copying py_pubsub/__init__.py -> /home/ubuntu/turtlebot3_ws/build/py_pubsub/build/lib/py_pubsub
+[4.062s] copying py_pubsub/publisher_member_function.py -> /home/ubuntu/turtlebot3_ws/build/py_pubsub/build/lib/py_pubsub
+[4.063s] running install
+[4.064s] running install_lib
+[4.067s] creating /home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[4.067s] copying /home/ubuntu/turtlebot3_ws/build/py_pubsub/build/lib/py_pubsub/__init__.py -> /home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[4.068s] copying /home/ubuntu/turtlebot3_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub
+[4.070s] byte-compiling /home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/__init__.py to __init__.cpython-310.pyc
+[4.072s] byte-compiling /home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-310.pyc
+[4.074s] running install_data
+[4.074s] creating /home/ubuntu/turtlebot3_ws/install/py_pubsub/share/ament_index
+[4.075s] creating /home/ubuntu/turtlebot3_ws/install/py_pubsub/share/ament_index/resource_index
+[4.075s] creating /home/ubuntu/turtlebot3_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[4.075s] copying resource/py_pubsub -> /home/ubuntu/turtlebot3_ws/install/py_pubsub/share/ament_index/resource_index/packages
+[4.076s] copying package.xml -> /home/ubuntu/turtlebot3_ws/install/py_pubsub/share/py_pubsub
+[4.076s] running install_egg_info
+[4.083s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages/py_pubsub-0.0.0-py3.10.egg-info
+[4.088s] running install_scripts
+[4.167s] writing list of installed files to '/home/ubuntu/turtlebot3_ws/build/py_pubsub/install.log'
+[4.281s] Invoked command in '/home/ubuntu/turtlebot3_ws/src/py_pubsub' returned '0': PYTHONPATH=/home/ubuntu/turtlebot3_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/turtlebot3_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/ubuntu/turtlebot3_ws/build/py_pubsub/build install --record /home/ubuntu/turtlebot3_ws/build/py_pubsub/install.log --single-version-externally-managed install_data
