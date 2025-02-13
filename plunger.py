@@ -1,35 +1,35 @@
 import RPi.GPIO as GPIO
+import time
 
-# Define GPIO pin
-SOLENOID_PIN = 12  # Change this if using a different pin
+# Define GPIO pin for solenoid plunger
+SOLENOID_PIN = 12  
 
 # Setup GPIO
-GPIO.setmode(GPIO.BCM)  # Use BCM numbering
-GPIO.setup(SOLENOID_PIN, GPIO.OUT)  # Set pin as output
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(SOLENOID_PIN, GPIO.OUT)
 
 def activate_solenoid():
-    GPIO.output(SOLENOID_PIN, GPIO.HIGH)  # Turn solenoid ON
+    GPIO.output(SOLENOID_PIN, GPIO.HIGH)  
     print("Solenoid Activated")
 
 def deactivate_solenoid():
-    GPIO.output(SOLENOID_PIN, GPIO.LOW)  # Turn solenoid OFF
+    GPIO.output(SOLENOID_PIN, GPIO.LOW)  
     print("Solenoid Deactivated")
 
 try:
-    while True:
-        cmd = input("Enter 'on' to activate, 'off' to deactivate, 'exit' to quit: ").strip().lower()
-        if cmd == "on":
-            activate_solenoid()
-        elif cmd == "off":
-            deactivate_solenoid()
-        elif cmd == "exit":
-            break
-        else:
-            print("Invalid command. Use 'on', 'off', or 'exit'.")
+    # Start sequence: OFF → ON → OFF
+    deactivate_solenoid()
+    time.sleep(1)  # Wait 1 second
+    
+    activate_solenoid()
+    time.sleep(1)  # Keep it ON for 1 second
+    
+    deactivate_solenoid()
+    print("Sequence Completed")
+
 except KeyboardInterrupt:
     print("\nProgram interrupted.")
 
 finally:
-    GPIO.cleanup()  # Reset GPIO settings
+    GPIO.cleanup()  
     print("GPIO cleaned up.")
-
